@@ -1,6 +1,7 @@
 lang:                  en
 title:                 Hydejack
 copyright:             © 2024. All rights reserved.
+theme: hydejack
 
 accent_image:          /assets/img/sidebar-bg.jpg
 accent_color:          rgb(79,177,186)
