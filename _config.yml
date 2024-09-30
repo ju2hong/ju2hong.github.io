@@ -7,6 +7,8 @@ accent_color:          rgb(79,177,186)
 theme_color:           rgb(25,55,71)
 
 google_fonts:          false
+plugins:
+- jekyll-include-cache
 
 hydejack:
   post_addons:         [about, newsletter, related, random, comments]
