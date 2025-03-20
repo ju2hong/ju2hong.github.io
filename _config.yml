@@ -19,7 +19,7 @@
 lang: en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title: Starter Kit
+title: 주이의 포트폴리오
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
@@ -68,6 +68,7 @@ menu:
         url: /fe/
       - title: BE
         url: /be/
+
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
 legal:
