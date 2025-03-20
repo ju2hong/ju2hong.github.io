@@ -1,4 +1,42 @@
-// You can add CSS rules here that will be inlined into each document.
-// .sidebar a {
-//   text-shadow: rgba(0, 0, 0, 0.25) 0.1rem 0.1rem 0.15rem;
-// }
+.sidebar-sticky {
+  height: 100%;
+  padding-top: 5%;
+  position: absolute;
+}
+.sidebar-about {
+  padding-bottom: 10%;
+}
+.spread-btn {
+  left: 7%;
+  position: absolute;
+  padding: 0;
+  padding-top: 5px;
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+.spread-btn:hover {
+  color: grey;
+}
+
+.menu-wrapper {
+  display: flex;
+  text-align: left;
+  margin-left: 10%;
+  margin-bottom: 0%;
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"] ~ ul {
+    display: none;
+    list-style: none;
+  }
+
+  input[type="checkbox"]:checked ~ ul {
+    display: block;
+  }
+}
