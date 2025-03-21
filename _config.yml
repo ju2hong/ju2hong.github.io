@@ -3,7 +3,7 @@
 
 # Uncomment and set the URL of your site (with protocol, e.g. `https://`)
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-# url:                   https://username.github.io
+# url: https://ju2hong.github.io
 
 # Uncomment and set the "base URL" of your site.
 # When your site is in a subdirectory, set to `/<name of directory>`,
@@ -24,13 +24,13 @@ title: 주이야기
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description: >
-  주이의 포트폴리오 블로그입니다. 개발, 프로젝트, 연구 등을 기록합니다.
+  주이의 블로그
 
 # A shorter description for the sidebar.
-tagline: Change `tagline` in `_config.yml`
+tagline: 개발, 프로젝트 등을 기록합니다.
 
 # A list of keywords for your blog
-keywords: []
+keywords: [앱개발, 웹개발, 프로젝트]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
@@ -365,12 +365,11 @@ plugins:
 #   admins:              <id>
 
 # Used on index and about sites
-# social:
-#   name:                <firstname> <lastname>
-#   links:
-#     - https://twitter.com/<username>
-#     - https://github.com/<username>
-
+social:
+  name: HONG JU-I
+  links:
+    - https://github.com/ju2hong
+    #     - https://twitter.com/<username>
 # Plugin Configs
 # ---------------------------------------------------------------------------------------
 optional_front_matter:
