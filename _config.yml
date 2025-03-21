@@ -16,16 +16,15 @@
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang: en
+lang: ko
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title: 주이의 포트폴리오
+title: 주이야기
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description: >
-  Hydejack is a boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
+  주이의 포트폴리오 블로그입니다. 개발, 프로젝트, 연구 등을 기록합니다.
 
 # A shorter description for the sidebar.
 tagline: Change `tagline` in `_config.yml`
@@ -41,32 +40,30 @@ logo: /assets/img/logo.png
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
-  name: <Hong> <Ju-i>
-  email: <juihong@gmail.com>
+  name: Hong Ju-i
+  email: juihong@gmail.com
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
 # Add links to the sidebar.
 menu:
-  - title: Example
-    url: /example/
-  - title: Documentation
-    url: /docs/
   - title: About
     url: /about/
-  - title: STUDY LOG
+  - title: Portfolio
+    url: /portfolio/
+  - title: Study Log
     url: /studylog/
     submenu:
-      - title: JAVA
+      - title: Java
         url: /java/
-      - title: BAEKJOON
+      - title: Baekjoon
         url: /baekjoon/
-  - title: HK-TOSS STUDY
+  - title: HK-TOSS Study
     url: /hk-toss/
     submenu:
-      - title: FE
+      - title: Frontend
         url: /fe/
-      - title: BE
+      - title: Backend
         url: /be/
 
 # Add links to the footer.
