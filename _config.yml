@@ -68,22 +68,23 @@ menu:
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
-legal:
-  - title: LICENSE
-    url: /LICENSE/
-  - title: NOTICE
-    url: /NOTICE/
-  - title: CHANGELOG
-    url: /CHANGELOG/
+# legal:
+#   - title: LICENSE
+#     url: /LICENSE/
+#   - title: NOTICE
+#     url: /NOTICE/
+#   - title: CHANGELOG
+#     url: /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright: © 2024. All rights reserved.
+copyright: © 2024. All rights reserved.  <br> 이 사이트는 포트폴리오 용도로 제작하였으며 상업적인 용도로 사용하지 않음을 밝힙니다.
 
 # Format of the permalinks
 permalink: /:categories/:year-:month-:day-:title/
 
 # Pagination configuration (used by the `blog` layout)
 paginate: 10
+
 paginate_path: /:num/
 
 # Theme
@@ -366,10 +367,9 @@ plugins:
 
 # Used on index and about sites
 social:
-  name: HONG JU-I
+  name: ju2hong
   links:
     - https://github.com/ju2hong
-    #     - https://twitter.com/<username>
 
 # Plugin Configs
 # ---------------------------------------------------------------------------------------

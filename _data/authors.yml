@@ -2,17 +2,12 @@
 # Must be the same as `author` in `_config.yml`.
 # Change `author1` to your shortname.
 author1:
-  name: <firstname> <lastname>
-  email: <mail@domain.tld>
+  name: Hong Ju-I
+  email: <juihong730@gmail.com>
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about: |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-    Open `_data/authors.yml` to edit this text.
 
   # This photo will be used in the about section
   picture:
@@ -27,7 +22,7 @@ author1:
   # Rearrange to change the order in which they appear
   # You can also provide an absolute URL (starting with https://) instead of usernames
   social:
-    twitter: <username>
+    # twitter: <username>
     github: ju2hong
     # email:           <mail@domain.tld>
     # rss:             https://<url>/feed.xml
@@ -40,7 +35,7 @@ author1:
     # spotify:         <user>/<number>
     # soundcloud:      <username>
     # lastfm:          <username>
-    # instagram:       <username>
+    instagram: juu_e_2
     # flickr:          <string@string>
     # 500px:           <username>
     # dribbble:        <username>
