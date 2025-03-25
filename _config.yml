@@ -58,6 +58,8 @@ menu:
         url: /java/
       - title: Baekjoon
         url: /baekjoon/
+      - title: Designing APIs
+        url: /apistudy/
   - title: HK-TOSS Study
     url: /hk-toss/
     submenu:
