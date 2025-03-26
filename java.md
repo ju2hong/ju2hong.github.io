@@ -5,4 +5,4 @@ description: >
   자바입문
 ---
 
-- [ch01](/pages/apistudy/ch01.md)
+- [ch01](/pages/java/ch01.md)
