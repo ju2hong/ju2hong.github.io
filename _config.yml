@@ -48,25 +48,25 @@ author:
 # Add links to the sidebar.
 menu:
   - title: About
-    url: /about/
+    url: /document/about
   - title: Portfolio
-    url: /portfolio/
+    url: /document/portfolio/
   - title: Study Log
-    url: /studylog/
+    url: /document/studylog/
     submenu:
       - title: Java
-        url: /java/
+        url: /document/java/
       - title: Baekjoon
-        url: /baekjoon/
+        url: /document/baekjoon/
       - title: Designing APIs
-        url: /apistudy/
+        url: /document/apistudy/
   - title: HK-TOSS Study
-    url: /hk-toss/
+    url: /document/hk-toss/
     submenu:
       - title: Frontend
-        url: /fe/
+        url: /document/fe/
       - title: Backend
-        url: /be/
+        url: /document/be/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
