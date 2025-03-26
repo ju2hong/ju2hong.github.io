@@ -7,10 +7,16 @@ description: >
 
 ### 📌 Study Log 목록
 
-[🐥 FE 수업정리](/document/fe.md)
+🐥 [FE 수업정리](/document/fe.md)
 
-[🐣 BE 수업정리](/document/be.md)
+🐣 [BE 수업정리](/document/be.md)
 
-#### 코드 저장소
+👉 [관련코드 저장소](https://github.com/ju2hong/2025htboot.git)
 
-[GitHub Repository](https://github.com/ju2hong/2025htboot.git)
+<br>
+
+<hr>
+
+### 📌 Project 목록
+
+📎 [월급 쪼개기 시스템 bufl](https://github.com/Toss-middle-project)
