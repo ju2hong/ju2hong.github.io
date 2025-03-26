@@ -7,6 +7,6 @@ description: >
   프론트 수업
 ---
 
-- [HTML 학습하기](/pages/front/html.md)
+- [HTML 학습하기](/pages/front/html/)
 
-- [CSS 학습하기](/pages/front/css.md)
+- [CSS 학습하기](/pages/front/css/)
