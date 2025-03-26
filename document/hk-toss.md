@@ -7,9 +7,9 @@ description: >
 
 ### 📌 Study Log 목록
 
-🐥 [FE 수업정리](/document/fe.md)
+🐥 [FE 수업정리](/document/fe)
 
-🐣 [BE 수업정리](/document/be.md)
+🐣 [BE 수업정리](/document/be)
 
 👉 [관련코드 저장소](https://github.com/ju2hong/2025htboot.git)
 
