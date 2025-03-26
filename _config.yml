@@ -50,7 +50,7 @@ menu:
   - title: About
     url: /document/about
   - title: Portfolio
-    url: /document/portfolio/
+    url: /document/about#portfolio
   - title: Study Log
     url: /document/studylog/
     submenu:
