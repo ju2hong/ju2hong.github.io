@@ -2,9 +2,9 @@
 layout: page
 related_posts:
   - /be/
-title: backend
+title: mySQL
 description: >
-  백앤드수업
+  mysql 수업 정리
 ---
 
 ### 데이터 베이스의 개요

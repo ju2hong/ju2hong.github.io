@@ -6,3 +6,5 @@ description: >
 ---
 
 - [sql수업](/pages/back/sql.md)
+
+- [nextjs 수업](/pages/back/nextjs.md)

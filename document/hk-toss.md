@@ -7,5 +7,10 @@ description: >
 
 ### 📌 Study Log 목록
 
-- [FE](/pages/front/)
-- [BE](/pages/back/sql.md)
+[🐥 FE 수업정리](/document/fe.md)
+
+[🐣 BE 수업정리](/document/be.md)
+
+#### 코드 저장소
+
+[GitHub Repository](https://github.com/ju2hong/2025htboot.git)
