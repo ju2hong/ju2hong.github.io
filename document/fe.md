@@ -10,3 +10,5 @@ description: >
 - [HTML 학습하기](/pages/front/html/)
 
 - [CSS 학습하기](/pages/front/css/)
+
+- [nextjs 수업](/pages/front/nextjs/)

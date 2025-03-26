@@ -6,5 +6,3 @@ description: >
 ---
 
 - [sql수업](/pages/back/sql/)
-
-- [nextjs 수업](/pages/back/nextjs/)
