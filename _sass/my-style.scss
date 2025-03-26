@@ -69,3 +69,68 @@
   font-size: 20px; /* 버튼 크기 조정 */
   margin-left: 5px; /* 버튼과 제목 간격 조절 */
 }
+/* 검색 결과 목록 스타일 */
+.search-results {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.search-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.search-item:hover {
+  border-color: #007acc; /* 강조 색상 (파란색) */
+  box-shadow: 0 4px 8px rgba(0, 122, 204, 0.2); /* 마우스 올렸을 때 그림자 효과 */
+}
+
+.search-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.search-item h3 {
+  font-size: 1.4em;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.description {
+  font-size: 1em;
+  color: #666;
+  margin: 0 0 10px;
+}
+
+.date {
+  font-size: 0.9em;
+  color: #999;
+}
+
+.search-item:last-child {
+  margin-bottom: 0; /* 마지막 항목에 추가 마진을 제거 */
+}
+
+/* 반응형 디자인: 작은 화면에서 글자 크기 및 간격 조정 */
+@media (max-width: 768px) {
+  .search-item {
+    padding: 10px;
+  }
+
+  .search-item h3 {
+    font-size: 1.2em;
+  }
+
+  .description {
+    font-size: 0.9em;
+  }
+
+  .date {
+    font-size: 0.8em;
+  }
+}
