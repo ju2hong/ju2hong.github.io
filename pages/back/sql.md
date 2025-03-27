@@ -3,6 +3,7 @@ layout: page
 related_posts:
   - /be/
 title: mySQL
+date: 2025-03-25
 description: >
   mysql 수업 정리
 ---
