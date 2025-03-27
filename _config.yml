@@ -47,10 +47,8 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title: About
-    url: /document/about
   - title: Portfolio
-    url: /document/about#portfolio
+    url: /about#portfolio
   - title: Study Log
     url: /document/studylog/
     submenu:
