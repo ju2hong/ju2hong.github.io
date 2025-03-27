@@ -28,6 +28,7 @@ npx create-next-app@latest . (현재폴더)
 ```
 
 **❗ 체크하기**
+
 ![Image](/assets/img/pageimg/nextjs1.png)
 
 **❗ react-dom 설치**
@@ -52,9 +53,7 @@ npx create-next-app@latest . (현재폴더)
 - page.tsx 보이는 화면, 화면 좌측 하단에 보이는 것은 global.css파일에서 아래 코드를 추가해주면 됨.
 
   ```
-  nextjs-portal {
-    display: none;
-  }
+  nextjs-portal {  display: none;  }
   ```
 
 - layout 파일은 페이지 default 값이나 화면간 정보를 나타냄.
@@ -144,48 +143,48 @@ export default function Loading() {
 
 1. /util/getForecast.ts 함수 파일 만들기
 
-```
-//타입 지정 후
-export const getCurrentWeather = async (
-  location: string
-): Promise<Response> => {
-  const res = await fetch(
-    `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}&aqi=no`
-  )
+   ```
+   //타입 지정 후
+   export const getCurrentWeather = async (
+     location: string
+   ): Promise<Response> => {
+     const res = await fetch(
+       `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}&aqi=no`
+     )
 
-  return res.json()
-}
-```
+     return res.json()
+   }
+   ```
 
 2. /[location]/page.tsx 코드 수정
 
-```
-import { getForecast } from '../utils/getForecast'
-export default async function Detail({ params }: Props) {
-  const { location } = await params
-  const json = await getForecast(location)
-  return (
-    <>
-      <h1>{name}의 3일치 날씨 예보</h1>
-      <ul>
-        {json.forecast.forecastday.map((day) => (
-          <li key={day.date}>
-            {day.date} / {day.day.avgtemp_c} / {day.day.condition.text}
-            <br />
-            <img
-              src={`http:${day.day.condition.icon}`}
-              alt={day.day.condition.text}
-            />
-            <span>{day.day.condition.text}</span>
-          </li>
-        ))}
-      </ul>
-      <br />
-      <HomeButton />
-    </>
-  )
-}
-```
+   ```
+   import { getForecast } from '../utils/getForecast'
+   export default async function Detail({ params }: Props) {
+     const { location } = await params
+     const json = await getForecast(location)
+     return (
+       <>
+         <h1>{name}의 3일치 날씨 예보</h1>
+         <ul>
+           {json.forecast.forecastday.map((day) => (
+             <li key={day.date}>
+               {day.date} / {day.day.avgtemp_c} / {day.day.condition.text}
+               <br />
+               <img
+                 src={`http:${day.day.condition.icon}`}
+                 alt={day.day.condition.text}
+               />
+               <span>{day.day.condition.text}</span>
+             </li>
+           ))}
+         </ul>
+         <br />
+         <HomeButton />
+       </>
+     )
+   }
+   ```
 
 ![Image](/assets/img/pageimg/nextjs4.png)
 
