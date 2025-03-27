@@ -48,9 +48,9 @@ hide_image: false
 
 ### 💊 캡스톤 알약인식 어플리케이션
 
-<div style="display: flex; align-items: center; font-size:20px;">
+<div style="display: flex; align-items: center; font-size: 20px;">
   <a href="https://github.com/ju2hong/YouEye.git" style="text-decoration: none;" title="">
-    <img src="https://github.com/user-attachments/assets/2caf2cc7-fceb-4ae6-a74c-d6a1c49d2bbc" width="400" style="height: auto; margin-right: 20px;" />
+    <img src="/assets/img/pageimg/youeye.png" width="100" style="height: auto; margin-right: 20px;" />
   </a>
   <p>시각 저하자를 위한 TTS, STT, OCR을 활용한 알약 인식 어플리케이션</p>
 </div>
@@ -59,9 +59,7 @@ hide_image: false
 
 <div style="display: flex; align-items: center; font-size: 20px;">
     <a href="https://github.com/Toss-middle-project" style="text-decoration: none;" title="">
-        <img src="https://github.com/user-attachments/assets/5fba9f8e-1d49-40cf-8840-7beedb3f1dde" width="400" style="height: auto; margin-right: 20px;" />
+        <img src="/assets/img/pageimg/bufl.png" width="100" style="height: auto; margin-right: 20px;" />
     </a>
     <p>월급 자동분배 시스템</p>
 </div>
-
-## Get It Now
