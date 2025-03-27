@@ -116,6 +116,29 @@
   margin-bottom: 0; /* 마지막 항목에 추가 마진을 제거 */
 }
 
+/* 🌙 다크 모드 (헤더에서 설정한 다크 모드 클래스 기반) */
+.dark-mode .search-results {
+  background-color: #222; /* 다크 모드 배경 */
+  border-color: #444;
+}
+
+.dark-mode .search-item {
+  background-color: #333; /* 개별 항목 배경 */
+  border-color: #555;
+}
+
+.dark-mode .search-item h3 {
+  color: #ddd; /* 제목 색상 */
+}
+
+.dark-mode .description {
+  color: #bbb; /* 설명 색상 */
+}
+
+.dark-mode .date {
+  color: #888; /* 날짜 색상 */
+}
+
 /* 반응형 디자인: 작은 화면에서 글자 크기 및 간격 조정 */
 @media (max-width: 768px) {
   .search-item {
