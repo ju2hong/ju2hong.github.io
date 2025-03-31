@@ -109,3 +109,189 @@ description: >
 - 복합대입연산자
   - A += B : A = A + B
   - A -= B : A = A - B
+
+### 인텔리제이 단축키
+
+- 출력관련 템플릿
+  - **sout** : System.out.println();
+  - **soutv**: 변수와 함께 출력
+  - **soutm**: 현재 메서드 이름 출력
+  - **soutp**: 메서드 파라미터 출력
+- 객체 생성 및 캐스팅
+  - **psf**: public staic final
+  - **psvm**: main 메서드
+  - **thr**: throw new
+- 반복문 관련 템플릿
+  - **fori**: 기본 for루프
+  - **itar**: 배열을 위한 for 루프
+  - **iter**: 향상된 for 루프
+  - **itli**: List를 위한 for 루프
+- 조건문 관련 템플릿
+  - **ifn**: null 체크 조건문
+  - **inn**: not null 체크 조건문
+
+### Scanner 클래스 함수들
+
+- nextLine() : 문자열을 입력받되 엔터칠 때 까지 (공백포함)
+- next() : 문자열의 공백까지만 입력받음
+- nextInt() : 문자열을 받아서 정수로 반환해줌
+- nextFloat() : 실수로 반환해줌
+- nextDouble() : 실수로 반환해줌
+
+### 조건문 (자바스크립트 문법과 거의 동일)
+
+- 단일 if문
+  ```
+  if(조건절-비교,논리 연산자) {
+       true일 때 수행문
+  }
+  ```
+- if else문
+  ```
+  if(10>20)
+      System.out.println("10>20");
+  else System.out.println("10<=20");
+  ```
+- if else if문
+  ```
+  int score = 90;
+  if(score == 90){
+      System.out.println("90");
+  } else if(score == 80){
+      System.out.println("80");
+  } else {
+      System.out.println("그외의 수");
+  }
+  ```
+- 중첩 if문
+  ```
+  if(true){ //조건1
+      if(false){ //조건2
+          //조건1이고(and) 조건2이다
+      } else if(true){ //조건3
+          //조건1이고 조건2는 아니고 조건3이다
+      }
+  }
+  ```
+
+### 조건문 switch문 (자바스크립트와 거의 유사함)
+
+```
+  int a = 10;
+  switch (a){
+      case 10:
+          System.out.println("10 입니다");
+          break;
+      case 20:
+          System.out.println("20 입니다");
+          break;
+      default:
+          System.out.println("그외의 경우");
+          break;
+  }
+```
+
+### 반복문
+
+- for , do-while
+- 패턴
+
+```
+
+for( 초기화; 조건; 증감 ) {
+  실행문;
+}
+
+```
+
+- 무한반복문 만드는 법
+
+```
+
+for( ; ; ){ }
+while(true){ }
+
+```
+
+### 배열 Array
+
+- 같은 타입의 데이터를 연속적 공간에 나열해 놓은 데이터구조
+- 생성시에 크기가 지정되고 이후에는 변경 불가
+- 인덱스는 0부터 부여됨
+
+### 객체지향 프로그래밍
+
+- 모든 사물을 객체(물건,사물)로 추상화(모델링,설계)하여 프로그래밍 하는 기법
+- 속성(변수,필드)과 행동(함수,메서드)로 정의한다.
+
+```
+//클래스 선언
+class Car{
+  //속성(변수)
+  int price = 1000;
+  //행동(메소드)
+  void run(){
+  System.out.println("차가 달린다");  } }
+
+  public class ex19 {
+  public static void main(String[] args) {
+  // 클래스이름 객체(인스턴스) 이름 = new 클래스이름();
+  Car car = new Car();
+
+          //멤버변수 접근하려면, 객체이름 뒤에 점.을 찍는다.
+          System.out.println(car.price);
+          //멤버함수 접근하려면, 객체이름 뒤에 점.을 찍는다.
+          car.run();
+
+          // System.out.println(car.run()); //void 반환값을 출력하면 x
+      }
+
+  }
+```
+
+- static 변수/함수
+
+- static 예약어 : 정적변수(객체)/함수를 지정할 때 사용
+- 의미 : 프로그램 구동시에 고정된 메모리 번지에 들어감 (자동 new), 프로그램 종료시까지 변경되지 않음
+- 사용이유
+
+  - 시작점(Entery Point)를 지정할 때 사용함
+  - 중요한 데이터를 안정적으로 저장할 때 주로 사용
+  - 자주 사용하는 유틸성 클래스에 지정한다. new를 안 해도 클래스 함수 사용 가능
+
+- 접근제한자
+
+- 클래스,함수,변수 앞에 위치하여 접근을 제한할 때 사용
+
+  | 접근제한자 | 설명                                                   |
+  | ---------- | ------------------------------------------------------ |
+  | public     | 같은 폴더(패키지)에서, 다른 폴더의 클래스에서 접근가능 |
+  | protected  | 같은 플더 + 상속 관계 클래스에서 접근 가능             |
+  | default    | 같은 폴더                                              |
+  | private    | 같은 클래스 안에서 접근 가능(캡슐화,은닉)              |
+  |            | Getter/Setter 함수를 통해서 접근 가능하도록 허용       |
+  |            | ex. 은행 잔고를 창구를 통해서만 접근가능하도록         |
+
+- 메서드 오버로딩(Overloading)
+
+  - 매개변수의 타입과 갯수를 다르게 함으로 함수의 기능을 확장하는것
+  - 같은이름의 함수를 여러번 사용하기 위함
+  - ex. println(정수형) => printlnInt
+  -     println(문자열) => printlnStr
+
+- 매서드 오버라이딩(Over riding)
+
+  - 상속관계에서 자식클래스의 매서드가 부모클래스의 메소드를 재정의 하는것
+  - 싱글톤(Signleton)
+  - 프로그램 안에서 유일한 클래스 객체
+
+- 생성자 함수(Constructor)
+
+  - 클래스 객체가 생성될 때(new) 자동으로 호출되는 메서드
+  - 용도 - 클래스 필드가 초기화 할 때
+
+- 클래스의 상속
+  - 부모(상위) 클래스의 유산(자원-함수와 변수)를 자식(하위) 클래스가 물려받은 것
+  - 사용이유
+    - 코드 중복을 피할 수 있다
+    - 계층적인 구조로 코드를 설계할 수 있다
