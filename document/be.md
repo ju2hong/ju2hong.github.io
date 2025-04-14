@@ -4,6 +4,7 @@ title: Backend
 related_posts:
   - /pages/back/sql/
   - /pages/back/java/
+  - /pages/back/jsp/
 description: >
   백앤드 수업
 ---
