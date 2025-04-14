@@ -52,14 +52,15 @@ description: >
   - 연산자
     - 수치연산자 : +, -, \*, / or div, % or mod, 단항연산자 -부호
     - 비교연산자 : == or eq, != or ne, < or lt, > or gt,<= or le, >= or ge
-    - 논리연산자 : && or and, || or or, ! or not
+    - 논리연산자 : && or and, or, ! or not
     - empty 연산자 : empty <값> (null,빈 문자열,길이가 0,빈 Map,빈 Collection 은 true 이 외는 flase)
     - 삼항연산자 : ? 연산자
 - JSTL : HTML처럼 표현식을 간단히 출력하기 위해 만들었음
-  → JSTL + EL 형태로 표현식을 간편하게 사용하기 위함
-  예) 표현식 <%= student %> → EL ${ student }
-  표현식 <%if %> → JSTL <c: if >
-  표현식 <%for %> → JSTL <c: for>
+  → JSTL + EL 형태로 표현식을 간편하게 사용하기 위함 <br>
+  예) 표현식 <%= student %> → EL ${ student } <br>
+  표현식 <%if %> → JSTL <c: if > <br>
+  표현식 <%for %> → JSTL <c: for> <br>
+
   - core 태그
     - < c :set > : 변수선언
     - < c :out > : 출력
@@ -69,6 +70,7 @@ description: >
     - < c :otherwise > : default문과 유사
     - < c :foreach > : for문(향상된)
   - forEach 태그 출력 예시
+
     - 리스트 출력 시
       ```java
       <c:forEach var="i" begin="0" end="4" step="1">
@@ -92,6 +94,7 @@ description: >
       </c:forEach>
       ```
     - 자바의 map데이터 출력
+
       ```
       <%
           java.util.Map<String, Object> map =
@@ -105,38 +108,45 @@ description: >
           ${ mapKV.key } = ${ mapKV.value }<br>
       </c:forEach>
       ```
-      **연습문제**
-    ```java
-     <!-- 1. 1부터 100까지 합 출력 -->
-     <c:set var="sum" value="0" />
-     <c:forEach var="i" begin="1" end="100" step="1">
-          <c:set var="sum" value="${sum + i}" />
-     </c:forEach>
-     1부터 100까지 합 : ${sum}
-    ```
-    ![image.png](/assets/img/pageimg/jsp1.png)
-    ```java
-    <!-- 2. 구구단 7단 출력 -->
-    <c:forEach var="i" begin="1" end="9" step="1">
-      7 x ${i} = ${7*i} <br>
-    </c:forEach>
-    ```
-    ![image.png](/assets/img/pageimg/jsp2.png)
-    ```java
-    <!-- 3. 1부터 100 사이의 2배수이면서 5배수 -->
-    <c:forEach var="i" begin="1" end="100" step="1">
-      <c:if test ="${i%2==0 && i%5==0}">
-         1부터 100 사이의 2배수이면서 5배수 : ${i} <br>
-      </c:if>
-    </c:forEach>
-    ```
-    ![image.png](/assets/img/pageimg/jsp3.png)
+
+  **연습문제**
+
+  ```java
+   <!-- 1. 1부터 100까지 합 출력 -->
+   <c:set var="sum" value="0" />
+   <c:forEach var="i" begin="1" end="100" step="1">
+        <c:set var="sum" value="${sum + i}" />
+   </c:forEach>
+   1부터 100까지 합 : ${sum}
+  ```
+
+  ![image.png](/assets/img/pageimg/jsp1.png)
+
+  ```java
+  <!-- 2. 구구단 7단 출력 -->
+  <c:forEach var="i" begin="1" end="9" step="1">
+    7 x ${i} = ${7*i} <br>
+  </c:forEach>
+  ```
+
+  ![image.png](/assets/img/pageimg/jsp2.png)
+
+  ```java
+  <!-- 3. 1부터 100 사이의 2배수이면서 5배수 -->
+  <c:forEach var="i" begin="1" end="100" step="1">
+    <c:if test ="${i%2==0 && i%5==0}">
+       1부터 100 사이의 2배수이면서 5배수 : ${i} <br>
+    </c:if>
+  </c:forEach>
+  ```
+
+  ![image.png](/assets/img/pageimg/jsp3.png)
 
 **Ex16JSPCRUD**
 
 - html문서(thymeleaf) 를 jsp문서로 바꾸기 위해서, 기존 Ex14ReadCRUD 폴더를 복붙해서 생성함
-  - setting.gradle에서 [`rootProject.name`](http://rootProject.name) 를 바꾼다.
-  - application.properties에서 [`spring.application.name`](http://spring.application.name) 를 바꾼다.
+  - setting.gradle에서 `rootProject.name` 를 바꾼다.
+  - application.properties에서 `spring.application.name` 를 바꾼다.
   - 실행파일 에서 -Application 앞 부분을 변경 후 실행하면 복붙폴더 이름변경 성공.
 - src>java>main 아래 webapp>WEB-INF>views 폴더를 생성 후 이전 templates 폴더에 있던 정적 `.html` 파일을 가져와 `.jsp` 파일로 바꾼다.
   - jsp폴더에서 thymeleaf 코드 부분을 다 변경해주면 된다. (대부분 th 코드를 지워주면 됨)
