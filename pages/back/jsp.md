@@ -92,20 +92,20 @@ description: >
       </c:forEach>
       ```
     - 자바의 map데이터 출력
-    ```java
-    <%
-        java.util.Map<String, Object> map =
-            new java.util.HashMap<>();
-        map.put("name", "홍길동");
-        map.put("now", new java.util.Date());
-    %>
-    <br>
-    <c:set var="mapData" value="<%= map %>"/>
-    <c:forEach var="mapKV" items="${ mapData }" >
-        ${ mapKV.key } = ${ mapKV.value }<br>
-    </c:forEach>
-    ```
-    - **연습문제**
+      ```
+      <%
+          java.util.Map<String, Object> map =
+              new java.util.HashMap<>();
+          map.put("name", "홍길동");
+          map.put("now", new java.util.Date());
+      %>
+      <br>
+      <c:set var="mapData" value="<%= map %>"/>
+      <c:forEach var="mapKV" items="${ mapData }" >
+          ${ mapKV.key } = ${ mapKV.value }<br>
+      </c:forEach>
+      ```
+      **연습문제**
     ```java
      <!-- 1. 1부터 100까지 합 출력 -->
      <c:set var="sum" value="0" />
@@ -138,5 +138,5 @@ description: >
   - setting.gradle에서 [`rootProject.name`](http://rootProject.name) 를 바꾼다.
   - application.properties에서 [`spring.application.name`](http://spring.application.name) 를 바꾼다.
   - 실행파일 에서 -Application 앞 부분을 변경 후 실행하면 복붙폴더 이름변경 성공.
-- src>java>main 아래 webapp>WEB-INF>views 폴더를 생성 후 이전 templates 폴더에 있던 정적 .`html` 파일을 가져와 `.jsp` 파일로 바꾼다.
+- src>java>main 아래 webapp>WEB-INF>views 폴더를 생성 후 이전 templates 폴더에 있던 정적 `.html` 파일을 가져와 `.jsp` 파일로 바꾼다.
   - jsp폴더에서 thymeleaf 코드 부분을 다 변경해주면 된다. (대부분 th 코드를 지워주면 됨)
