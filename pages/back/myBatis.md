@@ -116,7 +116,7 @@ description: >
 
 - 회원가입 정보를 db 에 insert 하기
 
-1.  MemberDao.xml 파일에 insert 하는 sql문 코드 추가
+  1.MemberDao.xml 파일에 insert 하는 sql문 코드 추가
 
 ```java
 <insert id="insert" parameterType="com.study.springboot.dto.MemberDto">
@@ -131,7 +131,7 @@ IMemberDao 코드 추가
 public int insert(MemberDto dto);
 ```
 
-2. map으로 부르기
+2.map으로 부르기
 
 ```java
 <insert id="insertMap" parameterType="map">
@@ -238,7 +238,7 @@ public String joinAction(@ModelAttribute MemberDto dto) {
   ```
 - delete
 
-  1. MemberDao.xml 파일에 sql문 코드 추가
+  1.MemberDao.xml 파일에 sql문 코드 추가
 
   ```java
   <delete id="delete" >
@@ -252,7 +252,7 @@ public String joinAction(@ModelAttribute MemberDto dto) {
   public int delete(int id);
   ```
 
-  2. map으로 부르기
+  2.map으로 부르기
 
   ```java
   <delete id="deleteMap" parameterType="map">
