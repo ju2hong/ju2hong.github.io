@@ -5,6 +5,7 @@ related_posts:
   - /pages/back/sql/
   - /pages/back/java/
   - /pages/back/jsp/
+  - /pages/back/myBatis/
 description: >
   백앤드 수업
 ---
