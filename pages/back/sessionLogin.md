@@ -3,7 +3,7 @@ layout: page
 related_posts:
   - /be/
 title: Session Login
-date: 2025-04-15
+date: 2025-04-16
 description: >
   springboot Session Login 수업 정리
 ---
