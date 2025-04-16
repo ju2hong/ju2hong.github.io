@@ -44,8 +44,8 @@
 .menu-wrapper {
   display: flex;
   align-items: right;
-  justify-content: center;
-  gap: 10px;
+  justify-content: center; /* 가로 중앙 정렬 */
+  gap: 10px; /* title과 버튼 사이 간격 조절 */
   position: relative;
 
   input[type="checkbox"] {
@@ -61,16 +61,15 @@
     display: block;
   }
 }
-
 .spread-btn {
   border: none;
   background: none;
   color: white;
   cursor: pointer;
-  font-size: 20px;
-  margin-left: 5px;
+  font-size: 20px; /* 버튼 크기 조정 */
+  margin-left: 5px; /* 버튼과 제목 간격 조절 */
 }
-
+/* 검색 결과 목록 스타일 */
 .search-results {
   list-style-type: none;
   padding: 0;
@@ -87,8 +86,8 @@
 }
 
 .search-item:hover {
-  border-color: #007acc;
-  box-shadow: 0 4px 8px rgba(0, 122, 204, 0.2);
+  border-color: #007acc; /* 강조 색상 (파란색) */
+  box-shadow: 0 4px 8px rgba(0, 122, 204, 0.2); /* 마우스 올렸을 때 그림자 효과 */
 }
 
 .search-link {
@@ -114,65 +113,33 @@
 }
 
 .search-item:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0; /* 마지막 항목에 추가 마진을 제거 */
 }
 
-/* ✅ 다크 모드 스타일: 전체 페이지 전역 스타일 적용 */
-.dark-mode body {
-  background-color: #1e1e1e;
-  color: #ccc;
-}
-
-.dark-mode a {
-  color: #ffffff;
-}
-
-.dark-mode .btn {
-  background-color: #444;
-  color: #fff;
-}
-
-.dark-mode .content,
-.dark-mode .post {
-  background-color: #2c2c2c;
-  color: #ccc;
-}
-
-.dark-mode pre,
-.dark-mode code {
-  background-color: #2e2e2e;
-  color: #f8f8f2;
-}
-
-.dark-mode .footer {
-  background-color: #111;
-  color: #888;
-}
-
-/* 기존 검색 결과 다크 모드 (유지) */
+/* 🌙 다크 모드 (헤더에서 설정한 다크 모드 클래스 기반) */
 .dark-mode .search-results {
-  background-color: #222;
+  background-color: #222; /* 다크 모드 배경 */
   border-color: #444;
 }
 
 .dark-mode .search-item {
-  background-color: #333;
+  background-color: #333; /* 개별 항목 배경 */
   border-color: #555;
 }
 
 .dark-mode .search-item h3 {
-  color: #ddd;
+  color: #ddd; /* 제목 색상 */
 }
 
 .dark-mode .description {
-  color: #bbb;
+  color: #bbb; /* 설명 색상 */
 }
 
 .dark-mode .date {
-  color: #888;
+  color: #888; /* 날짜 색상 */
 }
 
-/* 반응형 디자인 */
+/* 반응형 디자인: 작은 화면에서 글자 크기 및 간격 조정 */
 @media (max-width: 768px) {
   .search-item {
     padding: 10px;
@@ -189,14 +156,4 @@
   .date {
     font-size: 0.8em;
   }
-}
-.dark-mode .search-results,
-.dark-mode .search-item,
-.dark-mode .search-link,
-.dark-mode .description,
-.dark-mode .date {
-  /* 이미 있으시겠지만 명확히 추가해줍니다 */
-  background-color: #333 !important;
-  color: #ddd !important;
-  border-color: #555 !important;
 }
