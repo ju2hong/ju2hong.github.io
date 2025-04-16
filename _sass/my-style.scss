@@ -190,3 +190,13 @@
     font-size: 0.8em;
   }
 }
+.dark-mode .search-results,
+.dark-mode .search-item,
+.dark-mode .search-link,
+.dark-mode .description,
+.dark-mode .date {
+  /* 이미 있으시겠지만 명확히 추가해줍니다 */
+  background-color: #333 !important;
+  color: #ddd !important;
+  border-color: #555 !important;
+}
