@@ -6,6 +6,7 @@ related_posts:
   - /pages/back/java/
   - /pages/back/jsp/
   - /pages/back/myBatis/
+  - /pages/back/sessionLogin/
 description: >
   백앤드 수업
 ---
