@@ -118,54 +118,54 @@ description: >
 
   1.MemberDao.xml 파일에 insert 하는 sql문 코드 추가
 
-```java
-<insert id="insert" parameterType="com.study.springboot.dto.MemberDto">
-    INSERT INTO member
-    VALUES (0,#{userId},#{userPw},#{userName},#{userRole},#{joinDate})
-</insert>
-```
+  ```java
+  <insert id="insert" parameterType="com.study.springboot.dto.MemberDto">
+      INSERT INTO member
+      VALUES (0,#{userId},#{userPw},#{userName},#{userRole},#{joinDate})
+  </insert>
+  ```
 
-IMemberDao 코드 추가
+  IMemberDao 코드 추가
 
-```java
-public int insert(MemberDto dto);
-```
+  ```java
+  public int insert(MemberDto dto);
+  ```
 
-2.map으로 부르기
+  2.map으로 부르기
 
-```java
-<insert id="insertMap" parameterType="map">
-    INSERT INTO member
-    VALUES (0,#{userId},#{userPw},#{userName},#{userRole},#{joinDate})
-</insert>
-```
+  ```java
+  <insert id="insertMap" parameterType="map">
+      INSERT INTO member
+      VALUES (0,#{userId},#{userPw},#{userName},#{userRole},#{joinDate})
+  </insert>
+  ```
 
-IMemberDao 코드 추가
+  IMemberDao 코드 추가
 
-```java
-public int insert(Map map);
-```
+  ```java
+  public int insert(Map map);
+  ```
 
-controller 코드 작성
+  controller 코드 작성
 
-```java
-@PostMapping("/joinAction")
-@ResponseBody
-public String joinAction(@ModelAttribute MemberDto dto) {
-    try{
-        int result = memberDao.insert(dto);
-        System.out.println("result = " + result);
-        if(result != 1) {
-            return "회원가입 실패";
-        }
-    }
-    catch (Exception e) {
-        e.printStackTrace();
-        return "<script>alert('회원가입실패');history.back();</script>";
-    }
-    return "<script>alert('회원가입성공');location.href='/list';</script>";
-}
-```
+  ```java
+  @PostMapping("/joinAction")
+  @ResponseBody
+  public String joinAction(@ModelAttribute MemberDto dto) {
+      try{
+          int result = memberDao.insert(dto);
+          System.out.println("result = " + result);
+          if(result != 1) {
+              return "회원가입 실패";
+          }
+      }
+      catch (Exception e) {
+          e.printStackTrace();
+          return "<script>alert('회원가입실패');history.back();</script>";
+      }
+      return "<script>alert('회원가입성공');location.href='/list';</script>";
+  }
+  ```
 
 | Content-Type                      | 처리 방식 | 어노테이션                      |
 | --------------------------------- | --------- | ------------------------------- |
@@ -206,7 +206,9 @@ public String joinAction(@ModelAttribute MemberDto dto) {
   ```
 
 - update
+
   MemberDao.xml 파일에 sql문 코드 추가
+
   ```java
   <update id="update" parameterType="com.study.springboot.dto.MemberDto">
       UPDATE member SET user_id=#{userId}, user_pw=#{userPw},
@@ -214,11 +216,15 @@ public String joinAction(@ModelAttribute MemberDto dto) {
       WHERE id=#{ id }
   </update>
   ```
+
   IMemberDao 코드 추가
+
   ```java
   public int update(MemberDto dto);
   ```
+
   controller
+
   ```java
   @PostMapping("/modifyAction")
   @ResponseBody
@@ -236,6 +242,7 @@ public String joinAction(@ModelAttribute MemberDto dto) {
       return "<script>alert('수정성공');location.href='/list';</script>";
   }
   ```
+
 - delete
 
   1.MemberDao.xml 파일에 sql문 코드 추가
