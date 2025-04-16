@@ -7,6 +7,7 @@ related_posts:
   - /pages/back/jsp/
   - /pages/back/myBatis/
   - /pages/back/sessionLogin/
+  - /pages/back/thymeleafFragment/
 description: >
   백앤드 수업
 ---
