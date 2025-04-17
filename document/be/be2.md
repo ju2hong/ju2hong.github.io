@@ -7,7 +7,7 @@ related_posts:
   - /pages/back/sql/
   - /pages/back/java/
   - /pages/back/jsp/
-  - /pages/back/myBatis/
+  - /pages/back/mybatis/
   - /pages/back/sessionLogin/
   - /pages/back/thymeleafFragment/
   - /pages/back/logger/
