@@ -20,18 +20,3 @@ description: >
 ### 📌 Project 목록
 
 📎 [월급 쪼개기 시스템 bufl](https://github.com/Toss-middle-project)
-
-### 🆕 최신 글
-
-<ul class="search-results">
-  {% assign recent_posts = site.posts | sort: 'date' | reverse | slice: 0, 5 %}
-  {% for post in recent_posts %}
-    <li class="search-item">
-      <a href="{{ post.url }}" class="search-link">
-        <h3>{{ post.title }}</h3>
-        <p class="description">{{ post.description }}</p>
-        <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
-      </a>
-    </li>
-  {% endfor %}
-</ul>
