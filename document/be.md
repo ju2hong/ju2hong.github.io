@@ -9,6 +9,7 @@ related_posts:
   - /pages/back/sessionLogin/
   - /pages/back/thymeleafFragment/
   - /pages/back/logger/
+  - /pages/back/test/
 description: >
   백앤드 수업
 ---
