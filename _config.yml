@@ -83,7 +83,7 @@ copyright: © 2024. All rights reserved.  <br> 이 사이트는 포트폴리오 
 permalink: /:categories/:year-:month-:day-:title/
 
 # Pagination configuration (used by the `blog` layout)
-paginate: 5
+paginate: 4
 paginate_path: "/document/be/page:num.html"
 
 # Theme

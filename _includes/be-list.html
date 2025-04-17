@@ -1,4 +1,4 @@
-{% assign page_size = 5 %} {% assign all_post_urls = page.related_posts %} {%-
+{% assign page_size = 4 %} {% assign all_post_urls = page.related_posts %} {%-
 assign all_pages = site.pages | where_exp: "p", "all_post_urls contains p.url"
 -%} {%- assign sorted_pages = all_pages | sort: "date" | reverse -%} {% assign
 start_index = page.current_page | minus: 1 | times: page_size %} {% assign
@@ -18,9 +18,13 @@ paginated_pages = sorted_pages | slice: start_index, page_size %}
 
 <div class="pagination">
   {% if page.current_page > 1 %}
-  <a href="/document/be/" class="previous">이전</a>
+  <a
+    href="/document/be/{% if page.current_page == 2 %}{% else %}page{{ page.current_page | minus: 1 }}/{% endif %}"
+    class="previous"
+    >이전</a
+  >
   {% endif %} {% assign total_pages = sorted_pages.size | divided_by: page_size
-  | plus: 1 %} {% if page.current_page < total_pages %}
+  | ceil %} {% if page.current_page < total_pages %}
   <a href="/document/be/page{{ page.current_page | plus: 1 }}/" class="next"
     >다음</a
   >
