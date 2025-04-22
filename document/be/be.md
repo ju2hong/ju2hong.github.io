@@ -12,6 +12,7 @@ related_posts:
   - /pages/back/thymeleafFragment/
   - /pages/back/logger/
   - /pages/back/test/
+  - /pages/back/scheduler/
 description: >
   백앤드 수업
 ---
